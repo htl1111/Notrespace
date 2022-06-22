@@ -92,19 +92,19 @@ const quotes = [
         author: "이민혁, Fallin’",
     },
     {
-        quote: "작은 물살들이 큰 물결을 이루듯이 진심은 외면받지 않아요.",
+        quote: "작은 물살들이 큰 물결을 이루듯이 진심은 외면받지 않아요",
         author: "이민혁",
     },
     {
-        quote: "내가 누군가를 바라보며 꿈꿨고, 우리도 누군가의 꿈이 될 것이란 희망이 있다.",
+        quote: "내가 누군가를 바라보며 꿈꿨고, 우리도 누군가의 꿈이 될 것이란 희망이 있다",
         author: "임현식",
     },
     {
-        quote: "어느 위치에 있든, 도전하시는 거예요. 그래서 승리하세요.",
+        quote: "어느 위치에 있든, 도전하시는 거예요. 그래서 승리하세요",
         author: "이창섭",
     },
     {
-        quote: "사랑을 위해서 사랑할 필요는 없어, 그저 용감하게 발걸음을 떼기만 하면 돼.",
+        quote: "사랑을 위해서 사랑할 필요는 없어, 그저 용감하게 발걸음을 떼기만 하면 돼",
         author: "이창섭",
     },
     {
@@ -114,10 +114,8 @@ const quotes = [
 ]
 
 const quote = document.querySelector(".quote span:first-child");
-const author = document.querySelector(".quote span:last-child");
 const lengthOfQuotes = quotes.length;
 
 const todaysQuote = quotes[Math.floor(Math.random() * lengthOfQuotes)];
 
-quote.innerText = todaysQuote.quote;
-author.innerText = "- " + todaysQuote.author;
+quote.innerText = todaysQuote.quote + " - " + todaysQuote.author;

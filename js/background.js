@@ -41,11 +41,10 @@ const background = [
     },
 ]
 
-const wallpaper = document.querySelector(".background");
 const lengthOfBackground = background.length;
 
 const todaysBackground = Math.floor(Math.random() * lengthOfBackground);
 const firstBackColor = background[todaysBackground].first;
 const LastBackColor = background[todaysBackground].last;
 
-wallpaper.style.background = `linear-gradient(${firstBackColor}, ${LastBackColor})`;
+document.querySelector(".container").style.background = `linear-gradient(${firstBackColor}, ${LastBackColor})`;
