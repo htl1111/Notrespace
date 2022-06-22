@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+    href="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80">
+    <title>Notrespace</title>
+</head>
+<body>
+    <div class="container">
+        <!--명언-->
+        <div class="quote">
+            <span></span>
+            <span></span>
+        </div>
+        <!--환영-->
+        <div class="greeting">
+            <h1 id="greeting" class="hidden"></h1>
+        </div>
+        <!--할 일-->
+        <form id="todo-form">
+            <input type="text" placeholder="오늘의 할 일은 무엇인가요?" required />
+        </form>
+        <ul id="todo-list">
+        </ul>
+        <!--시계-->
+        <div class="clock">
+            <h2 id="clock">00:00:00</h2>
+        </div>
+        <!--날씨-->
+        <div class="weather">
+            <span></span>
+            <span></span>
+        </div>
+        <!--디데이-->
+        <div class="d-day">
+            <h3 id="d-day"></h3>
+        </div>
+        <!--로그인-->
+         <form id="login-form" class="hidden">
+            <input
+                required
+                maxlength="15"
+                type="text"
+                placeholder="당신을 뭐라고 불러드리면 좋을까요?"
+            />
+            <button>Log In</button>
+        </form>
+        <!--로그아웃-->
+        <button id="logout" class="hidden">Log Out</button>
+    </div>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/d-day.js"></script>
+    <!-- <script src="js/background.js"></script> -->
+</body>
+</html>
